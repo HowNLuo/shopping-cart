@@ -1,0 +1,17 @@
+.card {
+  padding: 0;
+}
+.minus,
+.plus,
+.count {
+  background-color: white;
+  text-align: center;
+  border: 1px solid #8C8C8C;
+  height: 30px;
+  border-radius: 0;
+}
+.product-group {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
