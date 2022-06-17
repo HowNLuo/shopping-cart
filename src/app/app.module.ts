@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { DepartmentComponent } from './department/department.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,13 @@ import { CheckoutComponent } from './checkout/checkout.component';
     DepartmentComponent,
     CheckoutComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    FormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

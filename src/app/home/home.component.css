@@ -10,8 +10,22 @@
   height: 30px;
   border-radius: 0;
 }
+.minus,
+.plus {
+  font-size:larger;
+}
 .product-group {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
+}
+.card-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

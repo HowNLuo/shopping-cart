@@ -1,6 +1,84 @@
 {
-  "item" : {
+  "product" : [
+    {
     "selfPk" : 1,
-    "name" : "蘋果"
-  }
+    "name" : "厚巧克力生乳捲",
+    "price" : 485,
+    "description" : "透過繁複製程細節所鋪成的層次口感是這款捲最大的重點，經過調溫的純巧克力口感醇滑濃郁，呈現光滑脆口的質地，再將巧克力刮屑拌入巧克力奶霜，讓入口即融的巧克力奶霜增加強烈的存在感，巧克力的濃烈餘韻值得細細品嚐。",
+    "image": "https://photo.yannick.com.tw/photo/20200031/1.jpg",
+    "count": 0
+    },
+    {
+    "selfPk" : 2,
+    "name" : "芒果荔枝生乳捲",
+    "price" : 525,
+    "description" : "Q 彈柔軟的蛋糕捲入柔細滑順的雙餡，豐厚馥郁的芒果香融入北海道奶霜中，分明的層次保留著奶霜爽口細膩的質感，再搭配吃得到荔枝果肉的清爽荔枝果凍，讓舌尖蹦跳出和諧又令人讚嘆的創意新香。",
+    "image": "https://photo.yannick.com.tw/photo/0101145/%E8%8A%92%E8%8D%94.jpg",
+    "count": 0
+    },
+    {
+    "selfPk" : 3,
+    "name" : "雙捲禮盒-原味+芒果荔枝",
+    "price" : 700,
+    "description" : "來自北海道的乳源，成就豐厚芳醇的自然風味，再搭配上昭和蛋糕專用麵粉製成的蛋糕，以絕佳比例引領平衡口感。一口咬下可以馬上感受到北海道奶霜入口即化的輕盈口感，就像現飲一杯來自北海道香醇又新鮮的牛乳，與柔軟Ｑ彈的蛋糕完美融合，在嘴裡很快就化開。",
+    "image": "https://photo.yannick.com.tw/photo/0101146/1.jpg",
+    "count": 0
+    },
+    {
+    "selfPk" : 4,
+    "name" : "新鮮芒果生乳捲(限門市取貨)",
+    "price" : 565,
+    "description" : "在Q彈柔軟的蛋糕裡捲入一整顆新鮮芒果的甘甜與北海道奶霜，恣意享受夏天專屬的輕盈美味。嚴選在果樹上自然熟成的「在欉黃」愛文芒果，果肉細嫩多汁、濃郁甜美，融入北海道奶霜的清爽，爽朗的美味輕盈消暑。",
+    "image": "https://photo.yannick.com.tw/photo/20200025/1111.jpg",
+    "count": 0
+    },
+    {
+    "selfPk" : 5,
+    "name" : "靜岡抹茶歐蕾生乳捲",
+    "price" : 465,
+    "description" : "靜岡抹茶粉增量50%，並運用雙層抹餡手法，不僅擁有抹茶豐厚飽滿的濃稠滋味，也保有北海道奶霜清新爽口的質感，尾韻迷人不苦澀，宛如霜淇淋般入口即融!",
+    "image": "https://photo.yannick.com.tw/photo/0101139/1.jpg",
+    "count": 0
+    },
+    {
+    "selfPk" : 6,
+    "name" : "原味生乳捲",
+    "price" : 380,
+    "description" : "嚴選保濕性絕佳的日本昭和蛋糕專用麵粉，麵糰經過「燙麵」改變筋性，讓蛋糕口感柔軟不失彈性，潤口不黏膩，剛剛好的蛋糕厚度與北海道奶霜完美融合，引領絕佳口感。",
+    "image": "https://photo.yannick.com.tw/photo/20200001/%E5%8E%9F%E5%91%B3%E7%94%9F%E4%B9%B3%E6%8D%B2.jpg",
+    "count": 0
+    },
+    {
+    "selfPk" : 7,
+    "name" : "茶拿鐵布丁生乳捲",
+    "price" : 420,
+    "description" : "香味獨特的阿薩姆紅茶入味捲蛋糕裡,茶香分明不苦澀,再融入北海道奶霜,開啟捲心裡的爽口滋味.茶奶香滿滿地,搭著滑嫩布丁,就是要佔領你的味蕾。",
+    "image": "https://photo.yannick.com.tw/photo/0101077/01.jpg",
+    "count": 0
+    },
+    {
+    "selfPk" : 8,
+    "name" : "特黑巧克力生乳捲",
+    "price" : 420,
+    "description" : "蛋糕嚐起來不帶酸苦風味，和一般巧克力蛋糕截然不同，捲入如鮮奶般的北海道奶霜，入口即化的新鮮口感，充滿獨特的巧克力風味，一點也不甜膩，超爽口。",
+    "image": "https://photo.yannick.com.tw/photo/0101030/3.jpg",
+    "count": 0
+    },
+    {
+    "selfPk" : 9,
+    "name" : "北海道黑酷曲-覆盆莓",
+    "price" : 500,
+    "description" : "以覆盆莓果乾點亮OREO蛋糕，內餡裡覆盆莓奶霜的酸甜襯托出獨特的可可風味，再搭配淋上巧克力的黑餅與覆盆莓果粒，交織著欲罷不能的層次口感。",
+    "image": "https://photo.yannick.com.tw/photo/0101141/1.jpg",
+    "count": 0
+    },
+    {
+    "selfPk" : 10,
+    "name" : "北海道黑酷曲",
+    "price" : 450,
+    "description" : "神秘黑蛋糕暗藏鬆軟的空氣感，充滿濃厚OREO 風味；融入北海道奶霜與特調卡士達，夢幻級乳香讓熟悉的味道更加精彩，點綴淋上巧克力的黑餅，一口之後欲罷不能。",
+    "image": "https://photo.yannick.com.tw/photo/0101130/1.jpg",
+    "count": 0
+    }
+  ]
 }
