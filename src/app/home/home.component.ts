@@ -1,6 +1,7 @@
 import { Product } from './../model/product.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { ApiService } from '../service/api.service';
+import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'app-home',
@@ -28,6 +29,18 @@ export class HomeComponent implements OnInit {
       this.products[selfPk - 1].count = 0;
     } else if (count.toString().includes('.')) {
       this.products[selfPk - 1].count = Math.floor(count);
+    }
+  }
+
+  addToShoppingCart(selfPk: number) {
+    if (this.products[selfPk - 1].count > 0) {
+      alert(
+        `${this.products[selfPk - 1].name} x ${
+          this.products[selfPk - 1].count
+        } 共 $${
+          this.products[selfPk - 1].count * this.products[selfPk - 1].price
+        }`
+      );
     }
   }
 }

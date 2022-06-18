@@ -12,7 +12,8 @@
   z-index: 999;
 }
 .nav-item {
-  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .esun-logo {
   width: 60px;
