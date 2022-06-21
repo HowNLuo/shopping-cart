@@ -8,7 +8,7 @@
         <button
           class="minus border-right-0"
           (click)="product.count = product.count - 1"
-          [disabled]="product.count <= 0"
+          [disabled]="product.count <= 1"
         >
           -
         </button>
@@ -21,13 +21,13 @@
         <button
           class="plus border-left-0"
           (click)="product.count = product.count + 1"
+          [disabled]="product.count >= 999"
         >
           +
         </button>
       </div>
       <button
         class="btn btn-primary mr-2"
-        [disabled]="product.count == 0"
         (click)="addToShoppingCart(product.selfPk)"
       >
         加入購物車
@@ -72,7 +72,7 @@
                 class="btn btn-secondary"
                 data-dismiss="modal"
               >
-                Close
+                關閉
               </button>
             </div>
           </div>
