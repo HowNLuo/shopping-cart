@@ -31,3 +31,8 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.back {
+  color:black;
+  font-size: large;
+  letter-spacing: 1px;
+}

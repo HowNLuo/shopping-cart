@@ -1,6 +1,8 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Product } from '../model/product.model';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-checkout',
@@ -10,10 +12,15 @@ import { Product } from '../model/product.model';
 export class CheckoutComponent implements OnInit {
   @Input() shoppingCart: Product[] = []; //從app.component取得shoppingCart資料
   @Output() updatedShoppingCart = new EventEmitter<Product[]>(); //傳送更新後的購物車資料
+  @Output() feature = new EventEmitter<string>();
   totalCount = 0;
   totalAmount = 0;
 
-  icon = { faTimes: faTimes };
+  icon = {
+    faTimes: faTimes,
+    faAngleLeft: faAngleLeft,
+    faAngleRight: faAngleRight,
+  };
   constructor() {}
 
   ngOnInit(): void {
@@ -27,7 +34,6 @@ export class CheckoutComponent implements OnInit {
     this.calculateTotalCount();
     this.updatedShoppingCart.emit(this.shoppingCart);
   }
-
   //確認數字是否小於0、大於999、為小數點。
   checkCount(selfPk: number, totalCount) {
     if (totalCount < 1 || totalCount >= 1000) {
@@ -39,7 +45,6 @@ export class CheckoutComponent implements OnInit {
     this.calculateTotalCount();
     this.updatedShoppingCart.emit(this.shoppingCart);
   }
-
   countMinus() {
     this.calculateTotalAmount();
     this.calculateTotalCount();
@@ -61,5 +66,8 @@ export class CheckoutComponent implements OnInit {
     this.shoppingCart.forEach((e) => {
       this.totalAmount += e.totalCount * e.price;
     });
+  }
+  backToShopping() {
+    this.feature.emit('home');
   }
 }

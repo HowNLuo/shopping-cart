@@ -80,6 +80,7 @@
       *ngIf="loadFeature === 'checkout'"
       [shoppingCart]="shoppingCart"
       (updatedShoppingCart)="getShoppingCart($event)"
+      (feature)="onSelected($event)"
     ></app-checkout>
   </div>
   <footer>

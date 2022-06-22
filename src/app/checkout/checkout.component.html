@@ -60,6 +60,14 @@
   </tbody>
 </table>
 <div class="d-flex justify-content-end">
-  <h4 class="mr-4">共{{ totalCount }}件</h4>
-  <h4>總金額${{ totalAmount }}元</h4>
+  <h4 class="mr-4">共 {{ totalCount }} 件</h4>
+  <h4>總金額 ${{ totalAmount }} 元</h4>
+</div>
+<div class="d-flex justify-content-center mt-5">
+  <button class="btn btn-link mr-4 back" (click)="backToShopping()">
+    <fa-icon [icon]="icon.faAngleLeft"></fa-icon> 繼續購物
+  </button>
+  <button class="btn btn-primary" *ngIf="this.shoppingCart.length > 0">
+    下一步 <fa-icon [icon]="icon.faAngleRight"></fa-icon>
+  </button>
 </div>
