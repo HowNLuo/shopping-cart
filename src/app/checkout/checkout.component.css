@@ -1,0 +1,33 @@
+.item-image {
+  width: 100%;
+}
+.item-name {
+  font-size: large;
+  letter-spacing: 1px;
+}
+td,
+.item {
+  text-align: center;
+  vertical-align: middle;
+}
+th {
+  text-align: center;
+}
+.minus,
+.plus {
+  font-size: larger;
+}
+.minus,
+.plus,
+.count {
+  background-color: white;
+  text-align: center;
+  border: 1px solid #8C8C8C;
+  height: 30px;
+  border-radius: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

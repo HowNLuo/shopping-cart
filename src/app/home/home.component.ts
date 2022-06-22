@@ -9,7 +9,6 @@ import { ApiService } from '../service/api.service';
 })
 export class HomeComponent implements OnInit {
   products: Product[] = [];
-  @Output() totalCount = new EventEmitter<number>();
   @Output() shoppingCart = new EventEmitter<Product>();
 
   constructor(private api: ApiService) {}
@@ -32,15 +31,10 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  addToShoppingCart(selfPk: number) {
-    let product = this.products[selfPk - 1];
-    alert(
-      `${product.name} x ${product.count} 共 $${
-        product.count * this.products[selfPk - 1].price
-      }`
-    );
-    product.totalCount += product.count;
-    this.totalCount.emit(product.count);
+  //將加入產品資料傳送至父元件
+  addToShoppingCart(name: string, price: number, count: number) {
+    let product = this.products.find((e) => e.name === name);
+    alert(`${name} x ${count} 共 $${count * price}`);
     this.shoppingCart.emit(product);
   }
 }

@@ -64,15 +64,14 @@
       />
       <a routerLink="/checkout" (click)="onSelected('checkout')">
         <fa-icon [icon]="icon.faShoppingCart" class="shopping-cart"></fa-icon>
-        <span class="badge">{{ shoppingCartCount }}</span>
+        <span class="badge">{{ badgeCount }}</span>
       </a>
     </div>
   </header>
   <div class="container">
     <app-home
       *ngIf="loadFeature === 'home'"
-      (totalCount)="getCount($event)"
-      (shoppingCart)="getShoppingCart($event)"
+      (shoppingCart)="getProduct($event)"
     ></app-home>
     <app-department *ngIf="loadFeature === 'department'"></app-department>
     <app-introduction *ngIf="loadFeature === 'introduction'"></app-introduction>
@@ -80,6 +79,7 @@
     <app-checkout
       *ngIf="loadFeature === 'checkout'"
       [shoppingCart]="shoppingCart"
+      (updatedShoppingCart)="getShoppingCart($event)"
     ></app-checkout>
   </div>
   <footer>
